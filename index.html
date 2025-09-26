@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Colheita - Geleias Artesanais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              terracotta: '#E2725B',
+              sage: '#8A9B68',
+              honey: '#F4A261',
+              berry: '#9B4F96',
+              earth: '#5E503F',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap');
+      body {
+        font-family: 'Raleway', sans-serif;
+      }
+      .playfair {
+        font-family: 'Playfair Display', serif;
+      }
+      .hero-pattern {
+        background-image: url("http://static.photos/food/1200x630/42");
+        background-size: cover;
+        background-position: center;
+      }
+      .flavor-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+      .testimonial-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(5px);
+      }
+    </style>
+</head>
+<body class="bg-amber-50 text-earth-900">
+  <!-- Header/Navigation -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i data-feather="heart" class="text-terracotta"></i>
+        <span class="playfair text-2xl font-bold text-earth">Doce Colheita</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#sabores" class="hover:text-terracotta transition">Sabores</a>
+        <a href="#historia" class="hover:text-terracotta transition">Nossa História</a>
+        <a href="#depoimentos" class="hover:text-terracotta transition">Depoimentos</a>
+        <a href="#contato" class="hover:text-terracotta transition">Contato</a>
+      </div>
+      <button class="md:hidden">
+        <i data-feather="menu"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-pattern relative h-screen flex items-center">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="container mx-auto px-6 z-10 text-white">
+      <h1 class="playfair text-5xl md:text-7xl font-bold mb-6">Geleias feitas com <span class="text-honey">amor</span> e <span class="text-sage">ingredientes puros</span></h1>
+      <p class="text-xl mb-8 max-w-2xl">Descubra o sabor autêntico da natureza em cada pote. Produção artesanal, sem conservantes e cheia de tradição.</p>
+      <div class="flex space-x-4">
+        <a href="#sabores" class="bg-terracotta hover:bg-terracotta/90 text-white px-8 py-3 rounded-full font-semibold transition">Conheça nossos sabores</a>
+        <a href="#contato" class="bg-white/10 hover:bg-white/20 border border-white text-white px-8 py-3 rounded-full font-semibold transition">Encomendar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sabores Section -->
+  <section id="sabores" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="playfair text-4xl font-bold mb-4">Nossos <span class="text-terracotta">Sabores</span> Exclusivos</h2>
+        <p class="max-w-2xl mx-auto text-lg">Cada pote é uma explosão de sabor natural, feito com frutas selecionadas e muito carinho.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Morango -->
+        <div class="flavor-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300">
+          <img src="http://static.photos/food/640x360/1" alt="Geleia de Morango" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Morango Silvestre</h3>
+            <p class="text-gray-600 mb-4">Morangos colhidos no pico da doçura, com um toque de baunilha.</p>
+            <a href="#" class="inline-block text-terracotta font-semibold hover:text-terracotta/80 transition">Saiba mais →</a>
+          </div>
+        </div>
+        
+        <!-- Framboesa -->
+        <div class="flavor-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300">
+          <img src="http://static.photos/food/640x360/2" alt="Geleia de Framboesa" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Framboesa Rubi</h3>
+            <p class="text-gray-600 mb-4">Framboesas orgânicas com um equilíbrio perfeito entre doce e ácido.</p>
+            <a href="#" class="inline-block text-terracotta font-semibold hover:text-terracotta/80 transition">Saiba mais →</a>
+          </div>
+        </div>
+        
+        <!-- Blueberry -->
+        <div class="flavor-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300">
+          <img src="http://static.photos/food/640x360/3" alt="Geleia de Blueberry" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Blueberry Premium</h3>
+            <p class="text-gray-600 mb-4">Blueberries cultivados em clima frio para intensidade de sabor.</p>
+            <a href="#" class="inline-block text-terracotta font-semibold hover:text-terracotta/80 transition">Saiba mais →</a>
+          </div>
+        </div>
+        
+        <!-- Pimenta -->
+        <div class="flavor-card bg-white rounded-xl overflow-hidden shadow-lg transition duration-300">
+          <img src="http://static.photos/food/640x360/4" alt="Geleia de Pimenta" class="w-full h-64 object-cover">
+          <div class="p-6">
+            <h3 class="playfair text-2xl font-bold mb-2">Pimenta & Mel</h3>
+            <p class="text-gray-600 mb-4">A combinação perfeita de doce e picante para os mais ousados.</p>
+            <a href="#" class="inline-block text-terracotta font-semibold hover:text-terracotta/80 transition">Saiba mais →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa História -->
+  <section id="historia" class="py-20 bg-amber-50">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-12">
+          <img src="http://static.photos/people/640x360/5" alt="Família produzindo geleias" class="rounded-xl shadow-xl">
+        </div>
+        <div class="lg:w-1/2">
+          <h2 class="playfair text-4xl font-bold mb-6">Nossa <span class="text-sage">História</span> de Tradição</h2>
+          <p class="text-lg mb-4">Tudo começou na cozinha da vovó Maria, onde as receitas eram passadas de geração em geração. Hoje, mantemos viva essa tradição com o mesmo cuidado e amor de sempre.</p>
+          <p class="text-lg mb-6">Usamos apenas frutas da estação, colhidas no momento perfeito de maturação, e cozinhamos em pequenos lotes para garantir qualidade excepcional em cada pote.</p>
+          <div class="flex flex-wrap gap-4">
+            <div class="flex items-center">
+              <i data-feather="check-circle" class="text-sage mr-2"></i>
+              <span>Ingredientes 100% naturais</span>
+            </div>
+            <div class="flex items-center">
+              <i data-feather="check-circle" class="text-sage mr-2"></i>
+              <span>Sem conservantes artificiais</span>
+            </div>
+            <div class="flex items-center">
+              <i data-feather="check-circle" class="text-sage mr-2"></i>
+              <span>Produção artesanal</span>
+            </div>
+            <div class="flex items-center">
+              <i data-feather="check-circle" class="text-sage mr-2"></i>
+              <span>Embalagens sustentáveis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="playfair text-4xl font-bold mb-4">O que dizem nossos <span class="text-berry">clientes</span></h2>
+        <p class="max-w-2xl mx-auto text-lg">A satisfação de quem experimenta nosso amor em forma de geleia.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Depoimento 1 -->
+        <div class="testimonial-card p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="flex -space-x-2">
+              <img src="http://static.photos/people/200x200/1" alt="Cliente" class="w-12 h-12 rounded-full border-2 border-white">
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold">Ana Carolina</h4>
+              <div class="flex text-amber-400">
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"A geleia de framboesa é divina! Sinto que estou comendo a fruta pura, tão natural é o sabor. Já virou tradição no café da manhã da minha família."</p>
+        </div>
+        
+        <!-- Depoimento 2 -->
+        <div class="testimonial-card p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="flex -space-x-2">
+              <img src="http://static.photos/people/200x200/2" alt="Cliente" class="w-12 h-12 rounded-full border-2 border-white">
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold">Roberto Almeida</h4>
+              <div class="flex text-amber-400">
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"Como chef de cozinha, sou muito exigente com ingredientes. As geleias da Doce Colheita são perfeitas para minhas receitas e para presentear clientes especiais."</p>
+        </div>
+        
+        <!-- Depoimento 3 -->
+        <div class="testimonial-card p-8 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <div class="flex -space-x-2">
+              <img src="http://static.photos/people/200x200/3" alt="Cliente" class="w-12 h-12 rounded-full border-2 border-white">
+            </div>
+            <div class="ml-4">
+              <h4 class="font-bold">Mariana Santos</h4>
+              <div class="flex text-amber-400">
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+                <i data-feather="star" class="fill-current"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"A geleia de pimenta com mel é minha paixão! O equilíbrio entre doce e picante é perfeito. Compro mensalmente e nunca me canso. Recomendo a todos!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-20 bg-terracotta text-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="playfair text-4xl font-bold mb-2">Faça sua <span class="text-amber-200">encomenda</span></h2>
+        <p class="mb-8 text-lg">Entre em contato para encomendar seus sabores favoritos ou tirar dúvidas sobre nossos produtos.</p>
+        
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="nome" class="block mb-2">Nome completo</label>
+            <input type="text" id="nome" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-200">
+          </div>
+          <div>
+            <label for="email" class="block mb-2">E-mail</label>
+            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-200">
+          </div>
+          <div>
+            <label for="telefone" class="block mb-2">Telefone</label>
+            <input type="tel" id="telefone" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-200">
+          </div>
+          <div>
+            <label for="sabor" class="block mb-2">Sabores de interesse</label>
+            <select id="sabor" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-200">
+              <option>Selecione um sabor</option>
+              <option>Morango Silvestre</option>
+              <option>Framboesa Rubi</option>
+              <option>Blueberry Premium</option>
+              <option>Pimenta & Mel</option>
+              <option>Kit com todos os sabores</option>
+            </select>
+          </div>
+          <div class="md:col-span-2">
+            <label for="mensagem" class="block mb-2">Mensagem</label>
+            <textarea id="mensagem" rows="4" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-200"></textarea>
+          </div>
+          <div class="md:col-span-2">
+            <button type="submit" class="bg-white text-terracotta hover:bg-amber-100 px-8 py-4 rounded-full font-bold transition">Enviar en
+</body>
+</html>
